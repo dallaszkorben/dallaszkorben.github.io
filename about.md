@@ -7,7 +7,7 @@ imagefeature: avatar.jpg
 chart: true
 ---
 <figure>
-  <img src="{{ site.url }}/avatar.jpg" alt="Hossain Mohammad Faysal">
+  <img src="{{ site.url }}/images/avatar.jpg" alt="Dallaszkorben">
   <figcaption>Dallaszkorben</figcaption>
 </figure>
 
