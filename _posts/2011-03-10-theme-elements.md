@@ -5,7 +5,7 @@ description: >-
   Just about everything you'll need to style in the theme: headings, paragraphs,
   blockquotes, tables, code blocks, and more.
 modified: 'Fri May 31 2013 02:00:00 GMT+0200 (CEST)'
-category: articles
+category:  Jekyll
 tags: sample post
 imagefeature: cover6.jpg
 comments: true
@@ -14,7 +14,7 @@ published: true
 mathjax: false
 featured: false
 categories:
-  - interesting
+  - Jekyll
 ---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
