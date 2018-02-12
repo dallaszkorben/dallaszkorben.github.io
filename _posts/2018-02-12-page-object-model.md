@@ -3,6 +3,7 @@ layout: post
 published: true
 mathjax: false
 featured: false
+imagefeature: cover1.jpg
 comments: false
 title: Page Object Model
 categories:
