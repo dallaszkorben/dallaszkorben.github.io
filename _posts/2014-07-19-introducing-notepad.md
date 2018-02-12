@@ -2,7 +2,7 @@
 layout: post
 title: Introducing Notepad
 modified: 'Sat Jul 19 2014 02:00:00 GMT+0200 (CEST)'
-category: Jekill
+category: Jekyll
 imagefeature: cover1.jpg
 comments: true
 mathjax: false
