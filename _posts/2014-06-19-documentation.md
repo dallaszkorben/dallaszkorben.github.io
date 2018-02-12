@@ -10,7 +10,7 @@ mathjax: false
 featured: false
 comments: false
 categories:
-  - personal
+  - interesting
 ---
 
 General notes and suggestions for customizing **HMFAYSAL Notepad Theme**.
