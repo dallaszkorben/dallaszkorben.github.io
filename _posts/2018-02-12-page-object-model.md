@@ -75,10 +75,10 @@ public class StartPage {
 		clickOnSendButton();
 	}
 }
-{% endhighlight %}
+{% rouge %}
 
-**DataPage.java.java**
-{% highlight ruby %}package pom.example.pages;
+**DataPage.java.java**{% rouge java %}
+package pom.example.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -107,10 +107,10 @@ public class DataPage {
 		return stringCity;		
 	}	
 }
-{% endhighlight %}
+{% rouge %}
 
-**TestSuit01.java**
-{% highlight java %}package pom.example.test;
+**TestSuit01.java**{% rouge java %}
+package pom.example.test;
 
 import static org.junit.Assert.assertEquals;
 import java.util.concurrent.TimeUnit;
@@ -157,5 +157,5 @@ public class TestSuit01 {
 		driver.close();
 	}
 }
-{% endhighlight %}
+{% rouge %}
 
