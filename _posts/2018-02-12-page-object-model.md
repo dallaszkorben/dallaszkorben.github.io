@@ -7,7 +7,6 @@ imagefeature: cover1.jpg
 comments: false
 title: Page Object Model
 categories:
-  - personal
   - Testing
 modified: '2018-02-12'
 description: Introduction of the Page Object Model
