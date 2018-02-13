@@ -75,8 +75,8 @@ kramdown:
       
 prose:
   rooturl: '_posts'
-  siteurl: 'http://dallaszkorben.github.io/'
-  relativeLinks: 'http://dallaszkorben.github.io/links.jsonp'
+  siteurl: 'https://dallaszkorben.github.io/'
+  relativeLinks: 'https://dallaszkorben.github.io/links.jsonp'
   media: 'images'
   metadata:
     _posts:
