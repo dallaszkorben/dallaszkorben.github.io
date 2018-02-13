@@ -7,38 +7,80 @@ imagefeature: cover1.jpg
 comments: false
 title: Page Object Model
 categories:
+  - personal
   - Testing
 modified: '2018-02-12'
 description: Introduction of the Page Object Model
 tags: test
+headline: ''
 ---
-Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
+# 1. Problem
 
-Main Features:
-Zurb Foundation 5 - css framework
-Fullscreen post covers with header wich will be bright or dark according to background image
-Fast and light
-Font Awesome
-Disqus comments integration
-You can set post image covers by using only Ghost narkdown editor just place something like this:
+Starting an UI Automation in Selenium WebDriver is NOT a tough task. You just need to find elements, perform operations on it.
 
-    ![cover-image](http://path-to-your-image.jpg)
+The chief problem with script maintenance is that if 10 different scripts are **using the same page element**, with **any change** in that element, you **need to change all 10 scripts**. This is time consuming and error prone.
 
-You can also place other images witch will be put in text.
+# 2. Idea
 
-![Laptop]({{ site.url }}/images/cover3.jpg)
+A better approach to script maintenance is to create a **separate class file** which would find web elements, fill them or verify them. This class can be **reused** in all the scripts using that element. 
 
-You can use Foundation Grid, but you need to write html in Ghost markdown editor (this isn't hard):
+In future, if there is a change in the web element, we need to make the change in **just 1 class file** and not 10 different scripts.
 
-Example - two columns:
+This approach is called Page Object Model(POM). It helps make the code more readable, maintainable, and reusable.
 
-<div class="row">
-    <div class="small-12 medium-6 columns">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo blanditiis pariatur, odio amet voluptas fugiat veniam quos ratione unde aperiam, aspernatur, dolores tempore nam. Vitae facere ipsum soluta architecto quisquam doloremque facilis commodi debitis atque, porro nesciunt modi reiciendis natus beatae aperiam cupiditate expedita eum, doloribus, obcaecati excepturi autem! Perferendis quam, deserunt illum ipsa repellendus nesciunt eum qui repellat est possimus natus quod ducimus excepturi fugit, tempore, dolores maiores esse?</p>
-    </div>
-    <div class="small-12 medium-6 columns">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo blanditiis pariatur, odio amet voluptas fugiat veniam quos ratione unde aperiam, aspernatur, dolores tempore nam. Vitae facere ipsum soluta architecto quisquam doloremque facilis commodi debitis atque, porro nesciunt modi reiciendis natus beatae aperiam cupiditate expedita eum, doloribus, obcaecati excepturi autem! Perferendis quam, deserunt illum ipsa repellendus nesciunt eum qui repellat est possimus natus quod ducimus excepturi fugit, tempore, dolores maiores esse?</p>
-    </div>
-</div>
+# 3. POM
 
-[More info about Foundation framework](http://foundation.zurb.com/docs/)
+Page Object Model is a **design pattern** to create Object Repository for web UI elements. 
+Under this model, for each web page in the application, there should be corresponding page class.
+
+This Page class will find the WebElements of that web page and also contains Page methods which perform operations on those WebElements. 
+
+Name of these methods should be given as per the task they are performing, i.e., if a loader is waiting for the payment gateway to appear, POM method name can be waitForPaymentScreenDisplay().
+
+# 4. Advantages of POM
+
+-Page Object Patten says operations and flows in the UI should be separated from verification. This concept makes our code cleaner and easy to understand.
+-The Second benefit is the object repository is independent of test cases, so we can use the same object repository for a different purpose with different tools. For example, we can integrate POM with TestNG/JUnit for functional Testing and at the same time with JBehave/Cucumber for acceptance testing.
+-Code becomes less and optimized because of the reusable page methods in the POM classes. 
+Methods get more realistic names which can be easily mapped with the operation happening in UI. i.e. if after clicking on the button we land on the home page, the method name will be like 'gotoHomePage()'.
+
+
+```java
+
+
+{% highlight java %}
+package pom.example.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class StartPage {
+	WebDriver driver;
+	
+	By byFieldZip = By.xpath("//form[@id='quoteForm']/p/input");
+	By bySendButton = By.id("submitButton");
+	
+	public StartPage( WebDriver driver ) {
+		this.driver = driver;
+	}
+	
+	public void setFieldZip(String zip) {		
+		WebElement elementFieldZip = driver.findElement( byFieldZip );
+		elementFieldZip.sendKeys("22030");
+	}
+	
+	public void clickOnSendButton() {		
+		WebElement elementSendButton = driver.findElement( bySendButton );
+		elementSendButton.click();
+	}
+	
+	public void startPage(String zip) {
+		setFieldZip(zip);
+		clickOnSendButton();
+	}
+}
+{% endhighlight %}
+```
+
+bla
