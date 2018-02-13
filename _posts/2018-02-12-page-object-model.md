@@ -110,7 +110,7 @@ public class DataPage {
 {% endhighlight %}
 
 **TestSuit01.java**
-{% highlight ruby %}package pom.example.test;
+{% highlight java %}package pom.example.test;
 
 import static org.junit.Assert.assertEquals;
 import java.util.concurrent.TimeUnit;
