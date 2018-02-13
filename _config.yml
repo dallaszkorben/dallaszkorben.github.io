@@ -60,7 +60,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  use_coderay: true
   
   coderay:
     coderay_line_numbers: 
@@ -69,9 +69,9 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: class
 
-    syntax_highlighter_opts:
-      block:
-      line_numbers: true
+  syntax_highlighter_opts:
+    block:
+    line_numbers: true
       
 prose:
   rooturl: '_posts'
