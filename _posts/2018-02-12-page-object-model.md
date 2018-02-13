@@ -39,9 +39,7 @@ Name of these methods should be given as per the task they are performing, i.e.,
 # 4. Advantages of POM
 
 - Page Object Patten says operations and flows in the UI should be separated from verification. This concept makes our code cleaner and easy to understand.
-
 - The Second benefit is the object repository is independent of test cases, so we can use the same object repository for a different purpose with different tools. For example, we can integrate POM with TestNG/JUnit for functional Testing and at the same time with JBehave/Cucumber for acceptance testing.
-
 - Code becomes less and optimized because of the reusable page methods in the POM classes. 
 Methods get more realistic names which can be easily mapped with the operation happening in UI. i.e. if after clicking on the button we land on the home page, the method name will be like 'gotoHomePage()'.
 
