@@ -7,11 +7,11 @@ imagefeature: cover1.jpg
 comments: false
 title: Page Object Model
 categories:
+  - personal
   - Testing
 modified: '2018-02-12'
 description: Introduction of the Page Object Model
 tags: test
-headline: ''
 ---
 # 1. Problem
 
@@ -43,7 +43,8 @@ Name of these methods should be given as per the task they are performing, i.e.,
 - Code becomes less and optimized because of the reusable page methods in the POM classes. 
 Methods get more realistic names which can be easily mapped with the operation happening in UI. i.e. if after clicking on the button we land on the home page, the method name will be like 'gotoHomePage()'.
 
-**StartPage.java**{% rouge java %}
+**StartPage.java**
+```java
 package pom.example.pages;
 
 import org.openqa.selenium.By;
@@ -75,9 +76,10 @@ public class StartPage {
 		clickOnSendButton();
 	}
 }
-{% rouge %}
+```
 
-**DataPage.java.java**{% rouge java %}
+**DataPage.java.java**
+```java
 package pom.example.pages;
 
 import org.openqa.selenium.By;
@@ -107,9 +109,10 @@ public class DataPage {
 		return stringCity;		
 	}	
 }
-{% rouge %}
+```
 
-**TestSuit01.java**{% rouge java %}
+**TestSuit01.java**
+```java
 package pom.example.test;
 
 import static org.junit.Assert.assertEquals;
@@ -157,5 +160,5 @@ public class TestSuit01 {
 		driver.close();
 	}
 }
-{% rouge %}
+```
 
