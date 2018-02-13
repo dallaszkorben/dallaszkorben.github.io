@@ -74,8 +74,7 @@ public class StartPage {
 		setFieldZip(zip);
 		clickOnSendButton();
 	}
-}
-{% endhighlight %}
+}{% endhighlight %}
 
 **DataPage.java.java**
 ```java
