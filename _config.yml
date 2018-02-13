@@ -4,10 +4,14 @@ logo:			logo.png
 disqus_shortname:	dallaszkorben
 share:			true
 dropcap:		true
-# Change url to your domain. Leave localhost server or blank when working locally.
-# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
-# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
+#url: "http://username.github.io"
 url:			    //dallaszkorben.github.io
+baseurl: ""
+
+# If you are building a GitHub project page then use these settings:
+#url: "http://username.github.io/projectname"
+#baseurl: "/projectname"
 
 # Owner/author information
 owner:
@@ -29,6 +33,15 @@ google_analytics:
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
+
+# List of links in the navigation bar
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Learn markdown: "http://www.markdowntutorial.com/"
+    - GitHub Pages: "https://pages.github.com/"
+  Author's home: "http://deanattali.com"
 
 # Links to include in footer navigation
 # For external links add external: true 
