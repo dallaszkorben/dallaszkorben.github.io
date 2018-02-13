@@ -16,19 +16,19 @@ tags: test
 
 Starting an UI Automation in Selenium WebDriver is NOT a tough task. You just need to find elements, perform operations on it.
 
-The chief problem with script maintenance is that if 10 different scripts are **using the same page element**, with **any change** in that element, you **need to change all 10 scripts**. This is time consuming and error prone.
+The chief problem with script maintenance is that if 10 different scripts are `using the same page element`, with `any change` in that element, you `need to change all 10 scripts`. This is time consuming and error prone.
 
 # 2. Idea
 
-A better approach to script maintenance is to create a **separate class file** which would find web elements, fill them or verify them. This class can be **reused** in all the scripts using that element. 
+A better approach to script maintenance is to create a `separate class file` which would find web elements, fill them or verify them. This class can be `reused` in all the scripts using that element. 
 
-In future, if there is a change in the web element, we need to make the change in **just 1 class file** and not 10 different scripts.
+In future, if there is a change in the web element, we need to make the change in `just 1 class file` and not 10 different scripts.
 
 This approach is called Page Object Model(POM). It helps make the code more readable, maintainable, and reusable.
 
 # 3. POM
 
-Page Object Model is a **design pattern** to create Object Repository for web UI elements. 
+Page Object Model is a `design pattern` to create Object Repository for web UI elements. 
 Under this model, for each web page in the application, there should be corresponding page class.
 
 This Page class will find the WebElements of that web page and also contains Page methods which perform operations on those WebElements. 
@@ -156,4 +156,3 @@ public class TestSuit01 {
 	}
 }
 {% endhighlight %}
-
