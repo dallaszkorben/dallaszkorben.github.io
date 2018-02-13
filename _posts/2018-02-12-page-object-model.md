@@ -11,6 +11,7 @@ categories:
 modified: '2018-02-12'
 description: Introduction of the Page Object Model
 tags: test
+headline: ''
 ---
 # 1. Problem
 
@@ -42,7 +43,7 @@ Name of these methods should be given as per the task they are performing, i.e.,
 -Code becomes less and optimized because of the reusable page methods in the POM classes. 
 Methods get more realistic names which can be easily mapped with the operation happening in UI. i.e. if after clicking on the button we land on the home page, the method name will be like 'gotoHomePage()'.
 
-
+**StartPage.java**
 ```java
 package pom.example.pages;
 
@@ -77,4 +78,87 @@ public class StartPage {
 }
 ```
 
-bla
+**DataPage.java.java**
+```java
+package pom.example.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class DataPage {
+	WebDriver driver;
+
+	By byCityField = By.id("cityState");
+	
+	public DataPage( WebDriver driver ) {
+		this.driver = driver;
+		
+		//Explicit Waiting until the cityState field appears in the DOM
+		WebDriverWait wait = new WebDriverWait( driver, 10);				
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byCityField ));
+	}
+	
+	public String getTextFromCityField() {
+		WebElement elementCityField = driver.findElement( byCityField );
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		String stringCity = (String) jse.executeScript("return arguments[0].value", elementCityField);
+		return stringCity;		
+	}	
+}
+```
+
+**TestSuit01.java**
+```java
+package pom.example.test;
+
+import static org.junit.Assert.assertEquals;
+import java.util.concurrent.TimeUnit;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import pom.example.pages.DataPage;
+import pom.example.pages.StartPage;
+
+public class TestSuit01 {
+	static final String START_URL = "http://geico.com";
+	static final String zipCode = "22030";
+	static final String cityName = "Fairfax, VA";
+	
+	static WebDriver driver;
+	static StartPage startPage;
+	static DataPage dataPage;
+	
+	@BeforeClass
+	public static void setup(){
+		driver = new ChromeDriver();		
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS );
+	}
+	
+	@Test
+	public void testCase01() {
+		driver.get(START_URL);
+		
+		//--- StartPage ---
+		startPage = new StartPage( driver );
+		startPage.startPage( zipCode );
+		
+		//--- DataPage ---
+		dataPage = new DataPage( driver );
+		String gainedCity = dataPage.getTextFromCityField();
+		assertEquals("The gained city is not the expected: ", cityName, gainedCity);
+		
+	}	
+	
+	@AfterClass
+	public static void tearDown() {
+		driver.close();
+	}
+}
+```
+
