@@ -7,12 +7,10 @@ imagefeature: cover1.jpg
 comments: false
 title: Page Object Model
 categories:
-  - personal
   - Testing
 modified: '2018-02-12'
 description: Introduction of the Page Object Model
 tags: test
-headline: ''
 ---
 # 1. Problem
 
@@ -46,9 +44,6 @@ Methods get more realistic names which can be easily mapped with the operation h
 
 
 ```java
-
-
-{% highlight java %}
 package pom.example.pages;
 
 import org.openqa.selenium.By;
@@ -80,7 +75,6 @@ public class StartPage {
 		clickOnSendButton();
 	}
 }
-{% endhighlight %}
 ```
 
 bla
