@@ -112,7 +112,7 @@ public class DataPage {
 ```
 
 **TestSuit01.java**
-```java
+{% highlight ruby %}
 package pom.example.test;
 
 import static org.junit.Assert.assertEquals;
@@ -160,5 +160,5 @@ public class TestSuit01 {
 		driver.close();
 	}
 }
-```
+{% endhighlight %}
 
