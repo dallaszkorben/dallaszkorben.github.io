@@ -44,7 +44,7 @@ Name of these methods should be given as per the task they are performing, i.e.,
 Methods get more realistic names which can be easily mapped with the operation happening in UI. i.e. if after clicking on the button we land on the home page, the method name will be like 'gotoHomePage()'.
 
 **StartPage.java**
-```java
+{% highlight ruby %}
 package pom.example.pages;
 
 import org.openqa.selenium.By;
@@ -76,10 +76,10 @@ public class StartPage {
 		clickOnSendButton();
 	}
 }
-```
+{% endhighlight %}
 
 **DataPage.java.java**
-```java
+{% highlight ruby %}
 package pom.example.pages;
 
 import org.openqa.selenium.By;
@@ -109,7 +109,7 @@ public class DataPage {
 		return stringCity;		
 	}	
 }
-```
+{% endhighlight %}
 
 **TestSuit01.java**
 {% highlight ruby %}
