@@ -47,8 +47,8 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Sweden
 future:      true
-highlighter: rouge
 markdown:    kramdown
+highlighter: rouge
 paginate:    5
 paginate_path: "page:num"
 
