@@ -31,7 +31,7 @@ google_verify:
 bing_verify:         
 
 # Links to include in footer navigation
-# For external links add external: true
+# For external links add external: true 
 links:
   - title: Home
     url: /
