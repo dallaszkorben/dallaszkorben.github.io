@@ -76,8 +76,7 @@ public class StartPage {
 }{% endhighlight %}
 
 **DataPage.java.java**
-```java
-package pom.example.pages;
+{% highlight java linenos %}package pom.example.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -106,11 +105,10 @@ public class DataPage {
 		return stringCity;		
 	}	
 }
-```
+{% endhighlight %}
 
 **TestSuit01.java**
-```java
-package pom.example.test;
+{% highlight java linenos %}package pom.example.test;
 
 import static org.junit.Assert.assertEquals;
 import java.util.concurrent.TimeUnit;
@@ -157,5 +155,5 @@ public class TestSuit01 {
 		driver.close();
 	}
 }
-```
+{% endhighlight %}
 
