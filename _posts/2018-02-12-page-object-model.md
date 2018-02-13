@@ -43,7 +43,7 @@ Name of these methods should be given as per the task they are performing, i.e.,
 - Code becomes less and optimized because of the reusable page methods in the POM classes. 
 Methods get more realistic names which can be easily mapped with the operation happening in UI. i.e. if after clicking on the button we land on the home page, the method name will be like 'gotoHomePage()'.
 
-**StartPage.java**{% highlight ruby %}
+**StartPage.java**{% rouge java %}
 package pom.example.pages;
 
 import org.openqa.selenium.By;
