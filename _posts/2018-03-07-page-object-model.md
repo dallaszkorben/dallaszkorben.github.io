@@ -4,14 +4,13 @@ published: true
 mathjax: false
 featured: true
 #imagefeature: cover1.jpg
-comments: false
+comments: true
 title: Page Object Model
+modified: '2018-03-07'
+description: Introduction of the Page Object Model
 categories:
   - Test automation
-
-modified: '2018-02-12'
-description: Introduction of the Page Object Model
-tags: test
+tags: test automation
 ---
 # 1. Problem
 
