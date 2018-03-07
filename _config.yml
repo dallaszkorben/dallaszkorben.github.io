@@ -6,7 +6,7 @@ share:			true
 dropcap:		true
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings: url: "http://username.github.io"
-url:			http://dallaszkorbe.github.io
+url:			http://dallaszkorben.github.io
 #url:			//dallaszkorben.github.io
 baseurl: ""
 
