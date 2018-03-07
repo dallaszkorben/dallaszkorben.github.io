@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/index.html
-title: My name
+title: Dallaszkorben
 tags: [my name]
 imagefeature: avatar.jpg
 chart: true
@@ -10,6 +10,7 @@ chart: true
   <img src="{{ site.url }}/images/avatar.jpg" alt="Dallaszkorben">
   <figcaption>Dallaszkorben</figcaption>
 </figure>
+
 
 {% assign total_words = 0 %	}
 {% assign total_readtime = 0 %}

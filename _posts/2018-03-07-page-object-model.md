@@ -2,12 +2,13 @@
 layout: post
 published: true
 mathjax: false
-featured: false
-imagefeature: cover1.jpg
+featured: true
+#imagefeature: cover1.jpg
 comments: false
 title: Page Object Model
 categories:
-  - Testing
+  - Test automation
+
 modified: '2018-02-12'
 description: Introduction of the Page Object Model
 tags: test

@@ -1,5 +1,5 @@
-title:			Cheat Sheet
-description:		"Blogging is fun"
+title:			But were afraid to ask
+description:		Everything you always wanted to know about  test
 logo:			logo.png
 disqus_shortname:	dallaszkorben
 share:			true
@@ -59,6 +59,7 @@ links:
   - title: About
     url: /about
     external: false
+
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Sweden
