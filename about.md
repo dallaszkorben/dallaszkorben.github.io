@@ -12,7 +12,7 @@ chart: true
 </figure>
 
 
-{% assign total_words = 0 %	}
+{% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
 {% assign featuredcount = 0 %}
 {% assign statuscount = 0 %}

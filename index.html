@@ -1,10 +1,35 @@
 ---
 layout: home
 title: BLOG
-description: "The personal blog of Hossain Mohd. Faysal, a doctoral candidate in Electrical Engineering at University of Pennsylvania."
-headline: An Engineer's Diary
-tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsylvania, doha, Qatar]
+description: "Testing blog of Dallaszkorben"
+headline: 
+tags: [Testing]
 ---
+
+<!-- <div>
+{{ "
+
+# This site is for personal use.
+I needed a page where all relevant information about testing are in one place as:
+- interview questions
+- relevant technologies
+- code snippets
+Most ideas on this site are not mine. I've collected the information from the net I considered important for testing and I tried to make them simple and short.
+
+" | markdownify }}
+
+</div>
+
+
+
+<div class="blog-index">  
+  {% assign post = site.posts.first %}
+  {% assign content = post.content %}
+  {% include post_detail.html %}
+</div>
+
+-->
+
 {% if site.paginate %}
 	{% for post in paginator.posts %}
     <article class="notepad-index-post post row">

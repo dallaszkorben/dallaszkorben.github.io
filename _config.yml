@@ -1,4 +1,4 @@
-title:			But were afraid to ask
+title:			But were afraid to ask 
 description:		Everything you always wanted to know about  test
 logo:			logo.png
 disqus_shortname:	dallaszkorben
@@ -71,14 +71,15 @@ paginate:    3
 paginate_path: "/page:num/"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-#permalink:   /:categories/:title
+#permalink:   /:categories/:title/
+
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true
+  enable_coderay: true
   
   coderay:
     coderay_line_numbers: 
@@ -93,3 +94,6 @@ kramdown:
       
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+
+# Gems
+plugins: [jekyll-paginate]

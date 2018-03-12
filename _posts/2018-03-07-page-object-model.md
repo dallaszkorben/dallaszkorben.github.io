@@ -10,7 +10,7 @@ modified: '2018-03-07'
 description: Introduction of the Page Object Model
 categories:
   - Test automation
-tags: test automation
+tags: [automation]
 ---
 # 1. Introduction
 
