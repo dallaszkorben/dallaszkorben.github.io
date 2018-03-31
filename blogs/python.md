@@ -1,8 +1,12 @@
 ---
-layout: page
+layout: default
 title: Python
-sidebar_link: true
+sidebar_link: false
 ---
+
+
+{{ paginator }}
+
 
 <div class="posts">
 {% for post in site.posts %}

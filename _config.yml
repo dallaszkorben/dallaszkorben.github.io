@@ -12,8 +12,8 @@ baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # If you want to move just the blog index pages but keep
                   # other pages at root, see the paginate_path and
                   # sidebar_blog_link below.
-disqus_shortname: dallaszkorben
-disqus.shortname: dallaszkorben
+disqus:
+  shortname: dallaszkorben
 
 author:
   name:           'dallaszkorben'
@@ -22,6 +22,7 @@ author:
 paginate:         3
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
+#  paginate_path:  /page:num
 
 plugins:
   #- jekyll-feed
