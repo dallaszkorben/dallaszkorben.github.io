@@ -3,7 +3,6 @@ layout: post
 published: true
 mathjax: false
 featured: false
-#imagefeature: cover1.jpg
 comments: true
 title: Testing Types
 modified: '2017-08-05'
