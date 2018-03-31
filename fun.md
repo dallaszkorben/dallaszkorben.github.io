@@ -30,4 +30,3 @@ hr {
 	{% endif %}
     {% endfor %}
 </center>
-

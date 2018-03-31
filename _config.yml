@@ -7,12 +7,16 @@ dropcap:		true
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings: url: "http://username.github.io"
 #url:			http://dallaszkorben.github.io
-url:			//dallaszkorben.github.io
-baseurl: ""
+#url:			//dallaszkorben.github.io
+#baseurl: ""
 
 # If you are building a GitHub project page then use these settings: url: "http://username.github.io/projectname"
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
+
+url: "http://dallaszkorben.github.io/testing"
+baseurl: "/testing"
+
 
 # Owner/author information
 owner:
