@@ -1,111 +1,40 @@
-title:			But were afraid to ask 
-description:		Everything you always wanted to know about  test
-logo:			logo.png
-disqus_shortname:	dallaszkorben
-share:			true
-dropcap:		true
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
 
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings: url: "http://username.github.io"
-#url:			http://dallaszkorben.github.io
-#url:			//dallaszkorben.github.io
-#baseurl: ""
+# Setup
+title:            Everything
+#tagline:          'A Jekyll theme'
+description:      'you allways wanted to know ...'
+url:              https://fongandrew.github.io/hydeout
+baseurl:          # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
+disqus_shortname: dallaszkorben
+disqus.shortname: dallaszkorben
 
-# If you are building a GitHub project page then use these settings: url: "http://username.github.io/projectname"
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
+author:
+  name:           'dallaszkorben'
+  url:            https://blabla.com
 
-url: "http://dallaszkorben.github.io/testing"
-baseurl: "/testing"
+paginate:         3
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
 
+plugins:
+  #- jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
 
-# Owner/author information
-owner:
-  name:           Dallasz Korben
-  avatar:         avatar.jpg
-  email:          dallaszkorben@gmail.com
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Tutorial
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  facebook:       bendzsaminhorn
-  github:         dallaszkorben
-  instagram:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# List of links in the navigation bar
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
-
-# Links to include in footer navigation
-# For external links add external: true 
-links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: Featured Posts
-    url: /featured
-    external: false
-  - title: Categories
-    url: /categories
-    external: false
-  - title: Fun
-    url: /fun
-    external: false
-  - title: About
-    url: /about
-    external: false
-
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Sweden
-future:      true
-markdown:    kramdown
-highlighter: rouge
-paginate:    3
-paginate_path: "/page:num/"
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-#permalink:   /:categories/:title/
-
-defaults:
-  - scope:
-      path: "images/fun"
-    values:
-      image: true
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: true
-  
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-  syntax_highlighter_opts:
-    block:
-    line_numbers: true
-      
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-
-# Gems
-plugins: [jekyll-paginate]
+# Custom vars
+#version:            1.0.0
+sidebar_home_link:  false
+# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+                                # page. If you change your paginate_path,
+                                # set this to the root of the paginate_path
+                                # to enable a separate blog link.
+github:
+  repo:             https://github.com/dallaszkorben
+download:           false
