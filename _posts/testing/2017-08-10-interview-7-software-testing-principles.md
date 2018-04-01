@@ -9,7 +9,7 @@ title: 7 Software Testing Principles
 modified: '2017-08-10'
 description: Interview questions-7 Software Testing Principles
 blog: testing
-category: [Inerview questions]
+category: [Interview questions]
 tags: [Testing, Interview questions]
 ---
 

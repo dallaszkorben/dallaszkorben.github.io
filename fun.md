@@ -1,23 +1,23 @@
 ---
-layout: category
+layout: page
 permalink: /fun/index.html
 title: Fun
-tags: [my name]
-imagefeature: 
+tags:
+imagefeature:
 chart: true
 sidebar_link: false
 ---
 
 <style>
-hr { 
-    display: block;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 3px;
-}
+#hr { 
+#    display: block;
+#    #margin-top: 50px;
+#    #margin-bottom: 50px;
+#    #margin-left: auto;
+#    #margin-right: auto;
+#    #border-style: inset;
+#    #border-width: 3px;
+#}
 </style>
 
 <center>

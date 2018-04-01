@@ -9,7 +9,7 @@ title: Error, Mistake, Bug, Failure
 modified: '2018-03-16'
 description: Error, Mistake, Bug, Failure
 blog: testing
-category: [Interview questoins]
+category: [Interview questions]
 tags: [Testing, Interview questions]
 ---
 # Basic definitions
