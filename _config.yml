@@ -28,6 +28,8 @@ plugins:
   #- jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-redirect-from
+
 
 # Custom vars
 #version:            1.0.0

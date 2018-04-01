@@ -2,6 +2,7 @@
 layout: page
 title: About
 sidebar_link: true
+redirect_from: "/index.html"
 ---
 
 <p class="message">
