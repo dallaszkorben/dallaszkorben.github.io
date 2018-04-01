@@ -8,10 +8,8 @@ comments: true
 title: Error, Mistake, Bug, Failure
 modified: '2018-03-16'
 description: Error, Mistake, Bug, Failure
-categories:
-  - Interview questions
+category: testing
 tags: [Interview questions]
-blog: testing
 ---
 # Basic definitions
 
@@ -21,7 +19,7 @@ My favorits are the following:
 - A human can make an `error` or `mistake`
 - The **error/mistake** produces `defect` or `bug` in the program code or in a document
 - If a defect in code is executed it can cause `failure`
-<img src="{{site.url}}/images/interview/error-mistake.png"  />
+<img src="{{site.url}}{{site.image_folder}}/testing/error-mistake.png"  />
 
 
 

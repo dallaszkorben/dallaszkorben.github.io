@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: category
 title: Python
 sidebar_link: false
 ---
@@ -10,7 +10,7 @@ sidebar_link: false
 
 <div class="posts">
 {% for post in site.posts %}
-    {% if post.blog == 'python' %}
+    {% if post.category == 'python' %}
 
 	<div class="post">
 	    <h3 class="post-title">

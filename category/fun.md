@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: category
 permalink: /fun/index.html
 title: Fun
 tags: [my name]
 imagefeature: 
 chart: true
-sidebar_link: true
+sidebar_link: false
 ---
 
 <style>

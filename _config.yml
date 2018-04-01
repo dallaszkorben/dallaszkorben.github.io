@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Everything
+title:            'Everything'
 #tagline:          'A Jekyll theme'
 description:      'you allways wanted to know ...'
 url:              https://dallaszkorben.github.io
@@ -36,6 +36,7 @@ sidebar_home_link:  false
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+image_folder:       /images
 github:
   repo:             https://github.com/dallaszkorben
 download:           false

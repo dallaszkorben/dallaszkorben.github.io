@@ -8,10 +8,8 @@ comments: true
 title: Software Quality
 modified: '2017-09-09'
 description: Interview questions-Software Quality
-categories:
-  - Interview questions
+category: testing
 tags: [Interview questions]
-blog: testing
 ---
 ---
 
@@ -53,5 +51,5 @@ If the user doesn’t want to print on that printer or wants to print a PDF but 
 *–Can test criteria be specified for the print function?*
 - **Portability** (adaptability) 
 *–Can the software automatically adapt to new printer models, or an update in printer driver software? Can the print function provide shortcuts for highly sophisticated users?*
-<img src="{{site.url}}/images/interview/softwareproductquality.jpg" width="900" />
+<img src="{{site.url}}{{site.image_folder}}/testing/softwareproductquality.jpg" width="900" />
 

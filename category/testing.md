@@ -1,18 +1,19 @@
 ---
-layout: page
-title: Deep Learning
-sidebar_link: true
+layout: category
+title: Testing
+sidebar_link: false
 ---
+
 
 <div class="posts">
 {% for post in site.posts %}
-    {% if post.blog == 'deeplearning' %}
+    {% if post.category == 'testing' %}
 
 	<div class="post">
 	    <h3 class="post-title">
 		<a href="{{ post.url }}">  {{ post.title }} </a>
 	    </h3>
-	    <span class="post-date">{{ post.date | date_to_string }}</span>
+	    <div class="post-date">{{ post.date | date_to_string }}</div>
 	    <br>
 	</div>
 

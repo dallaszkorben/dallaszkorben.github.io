@@ -9,10 +9,8 @@ comments: true
 title: Error, Mistake, Bug, Failure
 modified: '2018-03-16'
 description: Error, Mistake, Bug, Failure
-categories:
-  - Interview questions
+category: python
 tags: [Interview questions]
-blog: python
 ---
 # Class
 

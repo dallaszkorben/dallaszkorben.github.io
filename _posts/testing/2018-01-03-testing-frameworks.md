@@ -8,10 +8,8 @@ comments: true
 title: Testing Frameworks
 modified: '2018-01-03'
 description: Introduction of the Testing Frameworks
-categories:
-  - Test Theory
+category: testing
 tags: [Testing frameworks]
-blog: testing
 ---
 # 1. What is the Testing Framework? Why should I use it?
 
@@ -26,7 +24,7 @@ Following the guidelines for test automation is not mandatory but doing so provi
 There are lot of Test Automation Frameworks. They also have benefits and disadvantages. When you build your own Framework you should consider these attributes before you make decision.
 In practice a Framework is a combination of the Basic Frameworks for set up to leverage the advantages of some and mitigate the weaknesses of others.
 
-<img src="{{site.url}}/images/theory/testframeworks.png" width="900" />
+<img src="{{site.url}}{{site.image_folder}}/testing/testframeworks.png" width="900" />
 
 # 2. Linear Automation Framework
 With a linear test automation framework, also referred to as a record-and-playback framework, testers don’t need to write code to create functions and the steps are written in a sequential order. In this process, the tester records each step such as navigation, user input, or checkpoints, and then plays the script back automatically to conduct the test.
