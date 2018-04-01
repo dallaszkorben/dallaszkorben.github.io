@@ -7,8 +7,9 @@ comments: true
 title: Testing Types
 modified: '2017-08-05'
 description: Interview questions-Test types
-category: testing
-tags: [Interview questions]
+blog: testing
+category: [Interview questions]
+tags: [Testing, Interview questions]
 ---
 
 According to ISTQB definition, testing types are “means of clearly defining the objective of a certain 

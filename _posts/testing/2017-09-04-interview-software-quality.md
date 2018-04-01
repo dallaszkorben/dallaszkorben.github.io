@@ -8,8 +8,9 @@ comments: true
 title: Software Quality
 modified: '2017-09-09'
 description: Interview questions-Software Quality
-category: testing
-tags: [Interview questions]
+blog: testing
+category: [Testing, Interview questions]
+tags: [Testing, Interview questions]
 ---
 ---
 

@@ -8,8 +8,9 @@ comments: true
 title: Error, Mistake, Bug, Failure
 modified: '2018-03-16'
 description: Error, Mistake, Bug, Failure
-category: testing
-tags: [Interview questions]
+blog: testing
+category: [Interview questoins]
+tags: [Testing, Interview questions]
 ---
 # Basic definitions
 

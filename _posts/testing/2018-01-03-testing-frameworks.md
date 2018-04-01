@@ -8,8 +8,9 @@ comments: true
 title: Testing Frameworks
 modified: '2018-01-03'
 description: Introduction of the Testing Frameworks
-category: testing
-tags: [Testing frameworks]
+blog: testing
+category: [Testing, Testing frameworks]
+tags: [Testing, Testing frameworks]
 ---
 # 1. What is the Testing Framework? Why should I use it?
 

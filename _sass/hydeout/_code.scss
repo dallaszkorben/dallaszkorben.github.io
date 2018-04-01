@@ -30,11 +30,12 @@ pre code {
 
 // Pygments/Rouge via Jekyll
 .highlight {
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0rem;
   font-size: .8rem;
   line-height: 1.4;
   background-color: #f9f9f9;
+  #background-color: #dddddd;
   border-radius: .25rem;
 
   pre {
@@ -44,9 +45,11 @@ pre code {
 
   .lineno {
     display: inline-block; // Ensures the null space also isn't selectable
-    padding-right: .75rem;
-    padding-left: .25rem;
-    color: #999;
+
+    #padding-right: .75rem;
+    #padding-left: .25rem;
+    #padding-left: 1px;
+    color: #000;
     // Make sure numbers aren't selectable
     -webkit-user-select: none;
        -moz-user-select: none;

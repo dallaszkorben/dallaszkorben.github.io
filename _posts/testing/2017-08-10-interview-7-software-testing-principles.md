@@ -8,8 +8,9 @@ comments: true
 title: 7 Software Testing Principles
 modified: '2017-08-10'
 description: Interview questions-7 Software Testing Principles
-category: testing
-tags: [Interview questions]
+blog: testing
+category: [Inerview questions]
+tags: [Testing, Interview questions]
 ---
 
 If you were to test the entire possible combinations project EXECUTION TIME & COSTS would rise exponentially.

@@ -7,7 +7,7 @@ sidebar_link: false
 
 <div class="posts">
 {% for post in site.posts %}
-    {% if post.category == 'testing' %}
+    {% if post.blog == 'testing' %}
 
 	<div class="post">
 	    <h3 class="post-title">

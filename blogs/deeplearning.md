@@ -1,16 +1,12 @@
 ---
 layout: category
-title: Python
+title: Deep Learning
 sidebar_link: false
 ---
 
-
-{{ paginator }}
-
-
 <div class="posts">
 {% for post in site.posts %}
-    {% if post.category == 'python' %}
+    {% if post.blog == 'deeplearning' %}
 
 	<div class="post">
 	    <h3 class="post-title">
