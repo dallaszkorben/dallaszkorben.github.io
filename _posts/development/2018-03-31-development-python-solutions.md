@@ -5,12 +5,12 @@ mathjax: false
 featured: false
 comments: true
 
-title: Solutions
+title: Python Solutions
 modified: '2018-04-01'
 description: Python solutions
-blog: python
-category: [Solution]
-tags: [Python, Solutions]
+blog: development
+category: [Development, Python]
+tags: [Development, Python]
 ---
 # 1. Check if a string is multi-line
 

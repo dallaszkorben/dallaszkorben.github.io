@@ -8,7 +8,7 @@ title: Page Object Model
 modified: '2018-03-07'
 description: Introduction of the Page Object Model
 blog: testing
-category: [Automation]
+category: [Testing, Automation]
 tags: [Testing, Automation]
 ---
 # 1. Introduction

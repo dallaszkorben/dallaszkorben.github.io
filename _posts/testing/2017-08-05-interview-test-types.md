@@ -8,7 +8,7 @@ title: Testing Types
 modified: '2017-08-05'
 description: Interview questions-Test types
 blog: testing
-category: [Interview questions]
+category: [Testing, Interview questions]
 tags: [Testing, Interview questions]
 ---
 

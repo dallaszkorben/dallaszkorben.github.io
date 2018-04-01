@@ -12,7 +12,7 @@ sidebar_link: false
 	    <h3 class="post-title">
 		<a href="{{ post.url }}">  {{ post.title }} </a>
 	    </h3>
-	    <span class="post-date">{{ post.date | date_to_string }}</span>
+	    <div class="post-date">{{ post.date | date_to_string }}</div>
 	    <br>
 	</div>
 

@@ -1,19 +1,19 @@
 ---
 layout: category
-title: Python
+title: Development
 sidebar_link: false
 ---
 
 
 <div class="posts">
 {% for post in site.posts %}
-    {% if post.blog == 'python' %}
+    {% if post.blog == 'development' %}
 
 	<div class="post">
 	    <h3 class="post-title">
 		<a href="{{ post.url }}">  {{ post.title }} </a>
 	    </h3>
-	    <span class="post-date">{{ post.date | date_to_string }}</span>
+	    <div class="post-date">{{ post.date | date_to_string }}</div>
 	    <br>
 	</div>
 
