@@ -24,9 +24,8 @@ if( "\n" in my_string):
 else:
     print("Single-line")
 {% endhighlight %}
-{% highlight terminal %}
-Multi-line
-{% endhighlight %}
+
+<p class="console">Multi-line</p>
 
 
 # 2. Form groups of list elements
@@ -39,11 +38,10 @@ tuple_of_groups=zip(*[it] * n)
 for group in tuple_of_groups:
     print(group)
 {% endhighlight %}
-{% highlight terminal %}
-('a', 'b', 'c')
+<p class="console">('a', 'b', 'c')
 ('d', 'e', 'f')
 ('g', 'h', 'i')
-{% endhighlight %}
+</p>
 
 
 # 3. Filter out the duplicated elements (keep the order)
@@ -54,9 +52,7 @@ d=dict()
 new_list="".join([d.setdefault(c,c) for c in orig_list if c not in d]) 
 print(new_list)
 {% endhighlight %}
-{% highlight terminal %}
-ABCD
-{% endhighlight %}
+<p class="console">ABCD</p>
 
 
 # 4. Convert all element in a list to integer
@@ -66,9 +62,7 @@ a=["1”,  “2"]
 l=list( map( int, a ) )    #list() is necessarry to got through the map
 print(l)
 {% endhighlight %}
-{% highlight terminal %}
-[1, 2]
-{% endhighlight %}
+<p class="console">[1, 2]</p>
 
 
 # 5. Read not defined numbers of space separated values
@@ -77,9 +71,7 @@ print(l)
 par1, *args=string.split()    # "par1" always have value but args list can be empty
 print(args)
 {% endhighlight %}
-{% highlight terminal %}
-['par2', 'par3']
-{% endhighlight %}
+<p class="console">['par2', 'par3']</p>
 
 
 # 6. Evaluate a string as Python expression - 1
@@ -90,9 +82,7 @@ method="split"                      # Python command
 par=[';']                           # parameter of the command
 print( getattr(x, method)(*par)  )
 {% endhighlight %}
-{% highlight terminal %}
-['a', 'b', 'c']
-{% endhighlight %}
+{% highlight terminal %}['a', 'b', 'c']{% endhighlight %}
 
 
 # 7. Evaluate a string as Python expression - 2
@@ -102,9 +92,7 @@ x="'a;b;c'"
 method=".split(';')"
 print(eval(x+method))
 {% endhighlight %}
-{% highlight terminal %}
-['a', 'b', 'c']
-{% endhighlight %}
+<p class="console">['a', 'b', 'c']</p>
 
 
 # 8 Custom order of chars in a String
@@ -118,13 +106,10 @@ print(*s, sep='')      # The order will be done by an Tuple with 3 elements
                        # 2nd element: always False except in case of odd numbers
                        # 3rd element: the value
 {% endhighlight %}
-{% highlight terminal %}
-ginortS1324
-{% endhighlight %}
+<p class="console">ginortS1324</p>
+
 Alternative solution in the 3rd line:
-{% highlight bash linenos %}
-s=sorted(S, key=lambda c: (1 if re.match("[a-z]", c) else 2 if re.match("[A-Z]", c) else 3, c in '02468', c))
-{% endhighlight %}
+<p class="console">s=sorted(S, key=lambda c: (1 if re.match("[a-z]", c) else 2 if re.match("[A-Z]", c) else 3, c in '02468', c))</p>
 
 
 # 9. Transformation of a string
@@ -137,9 +122,7 @@ def square(match):
 
 print( re.sub(r"\d+", square, "1 2 3 4 5 6 7 8 9") )
 {% endhighlight %}
-{% highlight terminal %}
-1 4 9 16 25 36 49 64 81
-{% endhighlight %}
+<p class="console">1 4 9 16 25 36 49 64 81</p>
 
 
 # 10. Checking valid roman numbers from 1-3999
@@ -157,11 +140,10 @@ print(str(bool(re.match(regex_pattern, input()))))
 x=["a", "b", "c"]
 print("\n".join(x))
 {% endhighlight %}
-{% highlight terminal %}
-a
+<p class="console">a
 b
 c
-{% endhighlight %}
+</p>
 
 
 # 12. Sort a list by specified column
@@ -182,11 +164,9 @@ for i in x:
     print(*i)
 
 {% endhighlight %}
-{% highlight terminal %}
-4 21 1 14 2008-10-24 15:42:58
-6 21 1 1somename 2008-10-24 15:45:49
-5 21 3 19 2008-10-24 15:45:45
-7 22 3 2somename 2008-10-24 15:45:51
-3 22 4 2somename 2008-10-24 15:22:03
-{% endhighlight %}
-
+<p class="console">4 21 1 14 2008-10-24 15:42:58  
+6 21 1 1somename 2008-10-24 15:45:49  
+5 21 3 19 2008-10-24 15:45:45  
+7 22 3 2somename 2008-10-24 15:45:51  
+3 22 4 2somename 2008-10-24 15:22:03  
+</p>

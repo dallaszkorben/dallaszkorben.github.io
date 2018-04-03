@@ -1,0 +1,26 @@
+// Code
+//
+// Inline and block-level code snippets. Includes tweaks to syntax highlighted
+// snippets from Pygments/Rouge and Gist embeds.
+
+.console,
+pre {
+  font-family: $code-font-family;
+}
+
+.console {
+  padding: .25em .5em;
+  font-size: 85%;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: .25rem;
+  white-space: pre;
+  display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+
+

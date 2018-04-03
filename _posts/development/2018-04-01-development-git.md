@@ -35,3 +35,9 @@ You can check it with the following example.
 You checkout the master branch and then you check if the HEAD pints to the branch:
 
 
+<p class="console">$ git checkout master
+$ cat .git/HEAD
+
+ref: refs/heads/master
+</p>
+
