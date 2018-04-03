@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}">
+
+    {% include sidebar.html %}
+
+    <main class="cccontainer">
+       <img style="border-radius:0; margin-bottom:0;" src="{{site.url}}{{site.image_folder}}/{{ page.header_image }}" /> 
+
+       <main class="container">
+
+          <header>
+             <h1 class="page-title">{{ page.title }}</h1>
+          </header>
+
+          <img style="border-radius:0; margin-bottom:0;" src="{{site.url}}{{site.image_folder}}/{{ page.header_image }}" /> 
+
+          {{ content }}
+       </main>
+    </main>
+
+    {% include custom-foot.html %}
+
+
+  </body>
+</html>
