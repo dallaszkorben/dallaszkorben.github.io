@@ -82,7 +82,7 @@ method="split"                      # Python command
 par=[';']                           # parameter of the command
 print( getattr(x, method)(*par)  )
 {% endhighlight %}
-{% highlight terminal %}['a', 'b', 'c']{% endhighlight %}
+<p class="console">['a', 'b', 'c']</p>
 
 
 # 7. Evaluate a string as Python expression - 2
