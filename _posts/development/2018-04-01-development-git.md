@@ -64,8 +64,8 @@ To fix this you can re-attach the HEAD:
 <p class="console">$ git checkout master</p>
 
 
+# 4. Simple processes
 
-# 4. Simple Processes
 # 4.1 Adding an existing project to GitHub
 
 #1. Step into your_folder
@@ -105,20 +105,51 @@ To fix this you can re-attach the HEAD:
 
 
 
-# 4. Undo Changes
+# 4.3. Undo Uncommited changes
 
-# 4.1. Undo Uncommited changes
+# 4.3.1. Has not added to the Stage
+Let say you have modified.txt which was modified but the changes was not commited yet. 
+The “**git status**” shows that the file is “**Changes not staged to commit**”
+<p class="console">git checkout modified.txt</p>
 
-# 4.1.1. Has not added to the Stage
 
-# 4.1.2. Has added to the Stage
+# 4.3.2. Has added to the Stage
+Let say you have added.txt which was modified and you have already added it to the stage. 
+The “git status” shows about the file that the “Changes to be commited”.
+In this case the “git checkout” does not work as checkout is from the index (staged) area. 
+Instead of this you should get back the data from the Local Repository. 
+As the HEAD points to the recent commit you should use the HEAD  
+There are two solution for that. The first one checkouts the HEAD:
+<p class="console">git checkout HEAD  added.txt</p>
 
-# 4.2. Undo Commited changes
+The second solution is to get back the changes to the Workspace from the Stage. 
+In this case the changes are still there in the file but it is not in the stage area. 
+<p class="console">git reset HEAD  added.txt</p>
 
-# 4.2.1. Nuke Commit C and never see it again
 
-# 4.2.2. Undo the Commit but keep your changes
+# 4.4. Undo Commited changes
+The situation is the following. 
+There are A, B and C commits. The HEAD  points to the  C commit and the Status is the C commit
+<img style="margin-left: 40px" src="{{site.url}}{{site.image_folder}}/development/git-undo-01.png" />
 
-# 4.2.3. Undo the Commit but leave your files in index
 
+# 4.4.1. Nuke Commit C and never see it again
+<p class="console">$ git reset --hard HEAD~1</p>
+The result is:
+<img style="margin-left: 40px" src="{{site.url}}{{site.image_folder}}/development/git-undo-02.png" />
+
+
+# 4.4.2. Undo the Commit but keep your changes
+<p class="console">$ git reset HEAD~1</p>
+You tell Git to move the HEAD pointer back one Commit. But you leave your files as they ware. 
+Now “git status” shows the changes you had checked into C.
+<img style="margin-left: 40px" src="{{site.url}}{{site.image_folder}}/development/git-undo-03.png" />
+You can get back to Status B:
+<p class="console">git checkout file</p>
+
+
+# 4.4.3. Undo the Commit but leave your files in index
+<p class="console">git reset  --soft HEAD~1</p>
+Now “git status” shows files are in index.
+<img style="margin-left: 40px" src="{{site.url}}{{site.image_folder}}/development/git-undo-04.png" />
 
